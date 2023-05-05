@@ -235,7 +235,7 @@ header .header-wrap .header-right nav ul li:nth-child(2) {
 
 #home-product {
   width: 100%;
-  height: auto;
+  height: 100%;
   padding: 80px 0;
   color: #222;
   background-color: #f8fafc;
@@ -244,7 +244,7 @@ header .header-wrap .header-right nav ul li:nth-child(2) {
 #home-product .container {
   position: relative;
   width: 1400px;
-  height: 200px;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -271,29 +271,49 @@ header .header-wrap .header-right nav ul li:nth-child(2) {
   font-size: 1.4rem;
 }
 
+#home-product .container .content-area {
+  display: flex;
+}
+
 #home-product .container .content-area .content-left {
+  position: relative;
   width: 50%;
-  background-color: red;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  flex: 1;
+}
+
+#home-product .container .content-area .content-left a {
+  display: block;
+}
+
+#home-product .container .content-area .content-left h2,
+#home-product .container .content-area .content-left h4 {
+  position: absolute;
+  z-index: 1;
 }
 
 #home-product .container .content-area .content-left a h2 {
   font-size: 2.75rem;
   color: white;
   margin-bottom: 0;
+  top: 21px;
+  left: 24px;
   line-height: 1.25;
 }
 
 #home-product .container .content-area .content-left a h4 {
   color: white;
   font-size: 1.5rem;
+  top: 84px;
+  left: 24px;
   margin: 0 0 16px;
   font-weight: 400;
 }
 
 #home-product .container .content-area .content-left a .image-box {
-  position: absolute;
-  width: 680px;
-  height: 480px;
+  width: 100%;
+  height: 100%;
   top: 5rem;
   left: 0;
 }
@@ -302,6 +322,60 @@ header .header-wrap .header-right nav ul li:nth-child(2) {
   transition: all .5s;
   object-fit: cover;
   object-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 2%;
+}
+
+
+#home-product .container .content-area .content-right {
+  position: relative;
+  width: 50%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  flex: 1;
+}
+
+#home-product .container .content-area .content-right a {
+  display: block;
+}
+
+#home-product .container .content-area .content-right h2,
+#home-product .container .content-area .content-right h4 {
+  position: absolute;
+  z-index: 1;
+}
+
+#home-product .container .content-area .content-right a h2 {
+  font-size: 2.75rem;
+  color: white;
+  margin-bottom: 0;
+  top: 21px;
+  left: 24px;
+  line-height: 1.25;
+}
+
+#home-product .container .content-area .content-right a h4 {
+  color: white;
+  font-size: 1.5rem;
+  top: 84px;
+  left: 24px;
+  margin: 0 0 16px;
+  font-weight: 400;
+}
+
+#home-product .container .content-area .content-right a .image-box {
+  width: 100%;
+  height: 455.71px;
+  top: 5rem;
+  left: 0;
+}
+
+#home-product .container .content-area .content-right a .image-box img {
+  transition: all .5s;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 2%;
   width: 100%;
   height: 100%;
 }
