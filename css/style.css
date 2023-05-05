@@ -485,7 +485,6 @@ header .header-wrap .header-right nav ul li:nth-child(2) {
   padding: 0 12px;
 }
 
-
 #tech .container h2 {
   font-size: 44px;
   line-height: 1.4;
@@ -530,4 +529,74 @@ header .header-wrap .header-right nav ul li:nth-child(2) {
   width: 24px;
   display: inline-block;
   fill: #1580ff;
+}
+
+
+#techt .container .content-area .contentcenter {
+  position: relative;
+  width: 50%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  flex: 1;
+}
+
+#tech .container .content-area .content-center a {
+  display: block;
+}
+
+#tech .container .content-area .content-center h2,
+#tech .container .content-area .content-center h4 {
+  position: absolute;
+  z-index: 1;
+}
+
+#tech .container .content-area .content-center a h2 {
+  font-size: 2.75rem;
+  color: white;
+  margin-bottom: 0;
+  top: 21px;
+  left: 24px;
+  line-height: 1.25;
+}
+
+#tech .container .content-area .content-center a h4 {
+  color: white;
+  font-size: 1.5rem;
+  top: 84px;
+  left: 24px;
+  margin: 0 0 16px;
+  font-weight: 400;
+}
+
+#tech .container .content-area .content-center .more {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  z-index: 1;
+  transition: all .5s;
+  background: rgba(255,255,255,.25);
+}
+
+#tech .container .content-area .content-center .more img {
+  width: 64px;
+  height: 64px;
+}
+
+#tech .container .content-area .content-center a .image-box {
+  width: 100%;
+  height: 455.71px;
+  top: 5rem;
+  left: 0;
+}
+
+#tech .container .content-area .content-center a .image-box img {
+  transition: all .5s;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 2%;
+  width: 100%;
+  height: 100%;
 }
