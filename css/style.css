@@ -313,6 +313,23 @@ header .header-wrap .header-right nav ul li:nth-child(2) {
   font-weight: 400;
 }
 
+#our-product .container .content-area .content-left .more {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  z-index: 1;
+  transition: all .5s;
+  background: rgba(255,255,255,.25);
+}
+
+#our-product .container .content-area .content-left .more img {
+  width: 64px;
+  height: 64px;
+}
+
 #our-product .container .content-area .content-left a .image-box {
   width: 100%;
   height: 100%;
@@ -366,6 +383,23 @@ header .header-wrap .header-right nav ul li:nth-child(2) {
   font-weight: 400;
 }
 
+#our-product .container .content-area .content-right .more {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  z-index: 1;
+  transition: all .5s;
+  background: rgba(255,255,255,.25);
+}
+
+#our-product .container .content-area .content-right .more img {
+  width: 64px;
+  height: 64px;
+}
+
 #our-product .container .content-area .content-right a .image-box {
   width: 100%;
   height: 455.71px;
@@ -391,12 +425,16 @@ header .header-wrap .header-right nav ul li:nth-child(2) {
 }
 
 #banner .inner {
-  width: 100%;
+  position: relative;
+  width: 1400px;
   height: 84px;
-  padding: 0 60px;
+  margin: 0 60px;
+  padding: 0 12px;
+  align-items: center;
 }
 
 #banner .inner .text-box {
+  float: left;
   color: white;
   font-size: 28px;
   font-weight: 600;
@@ -404,7 +442,13 @@ header .header-wrap .header-right nav ul li:nth-child(2) {
   margin: 0 0 1rem;
 }
 
+#banner .inner .inquiry-btn {
+  text-align: right;
+  line-height: 5;
+}
+
 #banner .inner .inquiry-btn .btn {
+  position: relative;
   display: inline-block;
   border: 1px solid #f8fafc;
   color: #f8fafc;
@@ -413,15 +457,77 @@ header .header-wrap .header-right nav ul li:nth-child(2) {
   font-weight: 500;
   line-height: 1;
   cursor: pointer;
-  z-index: 2;
   transition: all .3s;
+  padding-right: 3rem;
 }
 
 #banner .inner .inquiry-btn .btn .arrow {
   transition: all .5s;
   position: absolute;
+  right: 1rem;
+  transform: translateY(-35%);
+  width: 24px;
+  display: inline-block;
+  fill: white;
+  vertical-align: middle;
+}
+
+
+#tech {
+  color: #222;
+  padding: 7rem 0 5rem;
+}
+
+#tech .container {
+  width: 1400px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+
+#tech .container h2 {
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: -1px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+#techabout .container .content-left {
+  width: 50%;
+  height: auto;
+  color: #222;
+  padding: 0 12px;
+}
+
+#tech .container .content-left h4 {
+  font-size: 24px;
+  margin: 0 0 48px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#tech .container .content-left .more-btn {
+  display: inline-block;
+  border: 1px solid #1580ff;
+  padding: 16px 48px 16px 20px;
+  border-radius: 4px;
+  line-height: 1;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+#tech .container .content-left .more-btn a {
+  color: #1580ff;
+  font-weight: 500;
+}
+
+#tech .container .content-left .more-btn .arrow {
+  transition: all .5s;
+  position: absolute;
   transform: translate(50%, -35%);
   width: 24px;
   display: inline-block;
-  fill: #f8fafc;
+  fill: #1580ff;
 }
