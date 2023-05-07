@@ -5,8 +5,8 @@
   margin: 0;
   padding: 0;
   font-family: "proxima-nova", "Pretendard", sans-serif;
-  box-sizing: border-box;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 html,
@@ -322,7 +322,7 @@ header .header-wrap .header-right nav ul li:nth-child(2) {
   height: 64px;
   z-index: 1;
   transition: all .5s;
-  background: rgba(255,255,255,.25);
+  background: rgba(255, 255, 255, .25);
 }
 
 #our-product .container .content-area .content-left .more img {
@@ -392,7 +392,7 @@ header .header-wrap .header-right nav ul li:nth-child(2) {
   height: 64px;
   z-index: 1;
   transition: all .5s;
-  background: rgba(255,255,255,.25);
+  background: rgba(255, 255, 255, .25);
 }
 
 #our-product .container .content-area .content-right .more img {
@@ -421,7 +421,6 @@ header .header-wrap .header-right nav ul li:nth-child(2) {
   height: auto;
   padding: 64px 0;
   background: linear-gradient(-65.5deg, #0c3c60 -15.1%, #1580ff 71.5%);
-  ;
 }
 
 #banner .inner {
@@ -493,16 +492,21 @@ header .header-wrap .header-right nav ul li:nth-child(2) {
   margin-bottom: 40px;
 }
 
+#tech .container .content-area {
+  display: flex;
+}
+
 #techabout .container .content-left {
-  width: 50%;
+  position: relative;
+  width: 33.333%;
   height: auto;
   color: #222;
-  padding: 0 12px;
+  flex: 0 0 auto;
 }
 
 #tech .container .content-left h4 {
   font-size: 24px;
-  margin: 0 0 48px;
+  margin: 0 0 16px;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -531,41 +535,48 @@ header .header-wrap .header-right nav ul li:nth-child(2) {
   fill: #1580ff;
 }
 
-
-#techt .container .content-area .contentcenter {
+#tech .container .content-area .content-center {
   position: relative;
-  width: 50%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  flex: 1;
+  flex: 0 0 auto;
+  width: 33.33333333%;
+  padding: 0;
 }
 
 #tech .container .content-area .content-center a {
   display: block;
+  position: relative;
+  border-radius: 12px;
+  height: 500px;
+  background: #f8fafc;
+  border: 1px solid #fff;
+  color: #fff;
+  overflow: hidden;
+  transition: all .5s;
 }
 
-#tech .container .content-area .content-center h2,
-#tech .container .content-area .content-center h4 {
+#tech .container .content-area .content-center a .text-box {
   position: absolute;
-  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 32px;
 }
 
-#tech .container .content-area .content-center a h2 {
-  font-size: 2.75rem;
+#tech .container .content-area .content-center a .text-box h3 {
   color: white;
-  margin-bottom: 0;
-  top: 21px;
-  left: 24px;
-  line-height: 1.25;
-}
-
-#tech .container .content-area .content-center a h4 {
-  color: white;
-  font-size: 1.5rem;
-  top: 84px;
-  left: 24px;
+  font-size: 34px;
+  line-height: 1.5;
+  font-weight: 600;
   margin: 0 0 16px;
+}
+
+#tech .container .content-area .content-center a p {
+  color: white;
+  font-size: 18px;
+  line-height: 1.75;
   font-weight: 400;
+  margin: 0 0 16px;
 }
 
 #tech .container .content-area .content-center .more {
@@ -576,8 +587,8 @@ header .header-wrap .header-right nav ul li:nth-child(2) {
   width: 64px;
   height: 64px;
   z-index: 1;
+  background: rgba(255, 255, 255, .25);
   transition: all .5s;
-  background: rgba(255,255,255,.25);
 }
 
 #tech .container .content-area .content-center .more img {
@@ -587,16 +598,130 @@ header .header-wrap .header-right nav ul li:nth-child(2) {
 
 #tech .container .content-area .content-center a .image-box {
   width: 100%;
-  height: 455.71px;
-  top: 5rem;
-  left: 0;
+  height: 100%;
 }
 
 #tech .container .content-area .content-center a .image-box img {
-  transition: all .5s;
   object-fit: cover;
   object-position: 50% 50%;
   border-radius: 2%;
   width: 100%;
   height: 100%;
+}
+
+
+#tech .container .content-area .content-right {
+  position: relative;
+  flex: 0 0 auto;
+  width: 33.33333333%;
+  padding: 0;
+}
+
+#tech .container .content-area .content-right a {
+  display: block;
+  position: relative;
+  border-radius: 12px;
+  height: 500px;
+  background: #f8fafc;
+  border: 1px solid #fff;
+  color: #fff;
+  overflow: hidden;
+  transition: all .5s;
+}
+
+#tech .container .content-area .content-right a .text-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 32px;
+}
+
+#tech .container .content-area .content-right a .text-box h3 {
+  color: white;
+  font-size: 34px;
+  line-height: 1.5;
+  font-weight: 600;
+  margin: 0 0 16px;
+}
+
+#tech .container .content-area .content-right a p {
+  color: white;
+  font-size: 18px;
+  line-height: 1.75;
+  font-weight: 400;
+  margin: 0 0 16px;
+}
+
+#tech .container .content-area .content-right .more {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  z-index: 1;
+  background: rgba(255, 255, 255, .25);
+  transition: all .5s;
+}
+
+#tech .container .content-area .content-right .more img {
+  width: 64px;
+  height: 64px;
+}
+
+#tech .container .content-area .content-right a .image-box {
+  width: 100%;
+  height: 100%;
+}
+
+#tech .container .content-area .content-right a .image-box img {
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 2%;
+  width: 100%;
+  height: 100%;
+}
+
+#partner {
+  width: 100%;
+  height: 570px;
+  padding: 80px 0;
+  background-image: url('../images/main-investors-1.jpg');
+  background-color: #0c3c60;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#partner .container {
+  max-width: 1400px;
+  height: 410px;
+  margin: 0 auto;
+}
+
+#partner .container .title {
+  text-align: left;
+  margin: 0 -12px 40px;
+}
+
+#partner .container .title .text-box {
+  width: 100%;
+  padding: 0 12px;
+}
+
+#partner .container .title .text-box h2 {
+  margin: 0;
+  color: white;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.05rem;
+}
+
+#partner .container article {
+  width: 100%;
+  background: #fff;
+  padding: 32px 0;
+  border-radius: 8px;
 }
