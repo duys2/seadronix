@@ -14,6 +14,11 @@ body {
   height: 100%;
 }
 
+/* body {
+  font-family: url(./2c5f464a87dc292d599e.woff2);
+  font-family: url(./9651800b1d63342f77e0.woff2);
+} */
+
 ul,
 ol {
   list-style: none;
@@ -742,6 +747,7 @@ header .header-wrap .header-right nav ul li:nth-child(2) {
   padding: 16px;
   text-align: center;
 }
+
 #partner .container article .item-wrap .item-box .item img {
   width: 270px;
   height: auto;
@@ -760,16 +766,60 @@ header .header-wrap .header-right nav ul li:nth-child(2) {
   padding: 80px 0;
   overflow: hidden;
 }
+
 #news .overflow-hidden .container {
   position: relative;
-  width: 100%;
+  width: 1400px;
   padding: 0 12px;
   margin: 0 auto;
 }
 
 #news .overflow-hidden .container .title-wrap {
-  width: 1400px;
   height: auto;
   margin: 0 auto;
-  padding: 0 -12px 40px;
+  margin-bottom: 40px;
 }
+
+#news .overflow-hidden .container .title-wrap .title-area {
+  width: 100%;
+}
+
+#news .overflow-hidden .container .title-wrap .title-area .title-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#news .overflow-hidden .container .title-wrap .title-area .title-between h2 {
+  font-family: "proxima-nova", "Pretendard", sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+  letter-spacing: -0.05rem;
+  line-height: 1.4;
+  color: #222;
+  margin: 0;
+}
+
+#news .overflow-hidden .container .title-wrap .title-area .title-between a {
+  display: inline-block;
+  border: 1px solid #1580ff;
+  color: #1580ff;
+  border-radius: 4px;
+  padding: 16px 48px 16px 20px;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  transition: .3s;
+}
+
+#news .overflow-hidden .container .title-wrap .title-area .title-between a .arrow {
+  display: inline-block;
+  position: absolute;
+  fill: #1580ff;
+  width: 24px;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  transition: .5s;
+}
+
