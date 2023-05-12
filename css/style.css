@@ -54,6 +54,11 @@ header .header-wrap {
 
 header .header-wrap .header-left {
   flex: 1;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
 }
 
 header .header-wrap .header-left #logo img {
@@ -62,14 +67,22 @@ header .header-wrap .header-left #logo img {
 }
 
 header .header-wrap .header-center {
-  flex: 1;
+  display: flex;
   height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header .header-wrap .header-center>* {
+  position: static;
+  margin: 0 17px;
+  z-index: 100;
 }
 
 header .header-wrap .header-center #gnb {
-  display: flex;
+  display: block;
   height: 100%;
-  margin: 0 17px;
   justify-content: center;
   align-items: center;
 }
@@ -78,26 +91,63 @@ header .header-wrap .header-center #gnb ul {
   display: flex;
   list-style: none;
   align-items: center;
-  justify-content: space-between;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 
 header .header-wrap .header-center #gnb ul li {
   display: flex;
+  position: relative;
   height: 100%;
-  padding: 0rem 1em;
+  font-size: 1.2rem;
+  line-height: 1.75;
+  align-items: center;
+  padding: 0rem 1.25em;
+  transition: padding .5s;
 }
 
 header .header-wrap .header-center #gnb ul li a {
+  position: relative;
   color: white;
+  font-size: 1.05rem;
+  font-weight: 500;
+  padding: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all .3s;
 }
 
 header .header-wrap .header-center #gnb ul li .submenu {
+  white-space: nowrap;
+  position: absolute;
+  max-width: 182px;
+  top: 95%;
+  left: 50%;
+  margin: 0;
+  padding: 15px 0;
+  /* opacity: 0; */
   background-color: white;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
+  transform: translate(-50%, 5px);
+  transition: transform .3s,opacity .3s;
+  list-style: none;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+header .header-wrap .header-center #gnb ul li .submenu li {
+  display: block;
+  padding: 4px 25px;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 header .header-wrap .header-center #gnb ul li .submenu li a {
+  display: block;
+  font-size: 1rem;
+  letter-spacing: .5px;
+  text-transform: uppercase;
   color: #222;
 }
 
