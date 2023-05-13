@@ -119,28 +119,35 @@ header .header-wrap .header-center #gnb ul li a {
 }
 
 header .header-wrap .header-center #gnb ul li .submenu {
-  white-space: nowrap;
   position: absolute;
-  max-width: 182px;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  width: 182px;
+  height: auto;
   top: 95%;
   left: 50%;
   margin: 0;
   padding: 15px 0;
-  /* opacity: 0; */
+  opacity: 0;
   background-color: white;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
   transform: translate(-50%, 5px);
-  transition: transform .3s,opacity .3s;
+  transition: transform .3s, opacity .3s;
   list-style: none;
   z-index: 1000;
-  pointer-events: none;
 }
 
 header .header-wrap .header-center #gnb ul li .submenu li {
   display: block;
+  /* 
+  위에서 flex 쓰면 아래에서는 블록을 해도 작아져서 붙음. 따라서 width를 정해주고
+  지금은 패딩값도 있어서 크기를 초과하게 되므로 box-sizing도 해줌
+  */
+  width: 100%;
   padding: 4px 25px;
   text-align: center;
   font-size: 1.2rem;
+  box-sizing: border-box;
 }
 
 header .header-wrap .header-center #gnb ul li .submenu li a {
