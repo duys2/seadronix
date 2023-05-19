@@ -107,11 +107,18 @@ header .header-wrap .header-center #gnb ul li {
   transition: padding .5s;
 }
 
+header .header-wrap .header-center #gnb ul li:hover > .submenu {
+  display: block;
+  opacity: 1;
+  transition: all .5s;
+}
+
 header .header-wrap .header-center #gnb ul li a {
   position: relative;
   color: white;
   font-size: 1.05rem;
   font-weight: 500;
+  line-height: 2;
   padding: 0;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -119,6 +126,7 @@ header .header-wrap .header-center #gnb ul li a {
 }
 
 header .header-wrap .header-center #gnb ul li .submenu {
+  display: none;
   position: absolute;
   flex-wrap: wrap;
   white-space: nowrap;
@@ -574,7 +582,7 @@ header .header-wrap .header-right nav ul li:nth-child(2) {
   display: flex;
 }
 
-#techabout .container .content-left {
+#tech .container .content-left {
   position: relative;
   width: 33.333%;
   height: auto;
