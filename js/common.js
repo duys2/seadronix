@@ -12,6 +12,7 @@ $(function () {
       $('header').css('background-color', 'transparent');
       $('header #logo a img').attr('src', './images/logo-light.svg');
       $('header #gnb a').css('color', 'white');
+      $('header #gnb .submenu a').css('color', '#222222')
       $('header .lang ul li:nth-child(2)').css('color', 'white');
       $('header').css('position', 'absolute');
       $('header').css('box-shadow', 'none');
