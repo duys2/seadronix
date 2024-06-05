@@ -1,1 +1,1 @@
-# seadronix front_end clone coding
+# Seadronix Front_end Clone Coding
